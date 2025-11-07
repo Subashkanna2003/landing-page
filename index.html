@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AJIO - Luxe Landing (Demo)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- STICKY TOP HEADER -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">AJIO</span><span class="accent">LUXE</span>
+    </div>
+
+    <div class="top-offer" id="topOffer">
+      🎄 Christmas Mega Sale — Up to <strong>70% OFF</strong> • Free shipping ₹999+
+    </div>
+
+    <div class="top-actions">
+      <button class="icon-btn" title="Wishlist">❤</button>
+      <button class="icon-btn" title="Notifications">🔔</button>
+      <button class="icon-btn" title="Cart">🛍️</button>
+    </div>
+  </header>
+
+  <!-- SEARCH BAR -->
+  <section class="search-area">
+    <input id="searchInput" placeholder="Search brands, collections, products..." />
+  </section>
+
+  <!-- CATEGORY STRIP (big icons) -->
+  <section class="categories" aria-label="Categories">
+    <div class="cat" data-name="Men">
+      <img src="c:\Users\Subash\Desktop\men cloth.webp"
+           alt="Men" onerror="this.style.display='none'; this.parentElement.classList.add('no-image')">
+      <div class="cat-label">Men</div>
+    </div>
+    <div class="cat" data-name="Women">
+      <img src="c:\Users\Subash\Desktop\ajio landing page photos\women 2 small.avif"
+           alt="Women" onerror="this.style.display='none'; this.parentElement.classList.add('no-image')">
+      <div class="cat-label">Women</div>
+    </div>
+    <div class="cat" data-name="Kids">
+      <img src="c:\Users\Subash\Desktop\ajio landing page photos\kids images.jpg"
+           alt="Kids" onerror="this.style.display='none'; this.parentElement.classList.add('no-image')">
+      <div class="cat-label">Kids</div>
+    </div>
+    <div class="cat" data-name="Footwear">
+      <img src="c:\Users\Subash\Desktop\ajio landing page photos\foot wear img.webp"
+           alt="Shoes" onerror="this.style.display='none'; this.parentElement.classList.add('no-image')">
+      <div class="cat-label">Footwear</div>
+    </div>
+    <div class="cat" data-name="Accessories">
+      <img src="c:\Users\Subash\Desktop\ajio landing page photos\accessories.avif"
+           alt="Accessories" onerror="this.style.display='none'; this.parentElement.classList.add('no-image')">
+           <div class="cat-label">Accessories</div>
+    </div>
+      <div class="cat" data-name="Home & Kitchen">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\homde and kitchen img.avif"
+        alt="Home & Kitchen" onerror="this.style.display='none'; this.parentElement.classList.add('no-image')">
+        <div class="cat-label">Home & Kitchen</div>
+      </div>
+      <div class="cat" data-name="Beauty">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\skincare img.jpg"
+        alt="Beauty"onerror="this.style.display='none'; this.parentElement.classList.add('no-image')">
+        <div class="cat-label">Beauty</div> 
+      </div>
+      <div class="cat" data-name="Ajio Luxe">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\ajio luxe catogries.webp"
+      alt="Ajio Luxe"onerror="this.style.display='none'; this.parentElement.classList.add('no-image')">
+      <div class="cat-label">Ajio Luxe</div> 
+      </div>
+      <div class="cat" data-name="Profile">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\profile 2.jpg"
+        alt="Profile"onerror="this.style.display='none'; this.parentElement.classList.add('no-image')">
+      <div class="cat-label">Profile</div> 
+      </div>
+  </section>
+
+  <!-- HERO SLIDER -->
+  <section class="hero" id="hero">
+    <button class="hero-arrow left" id="prevHero" aria-label="previous slide">‹</button>
+    <div class="hero-slides">
+      <div class="hero-slide" data-caption="Exclusive 40% Discount">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\good denim banner.png" alt="Luxury fashion" onerror="this.dataset.err='1'">
+        <div class="slide-caption">Ajio Exclusive — Up to 40% OFF</div>
+      </div>
+      <div class="hero-slide" data-caption="Home Center Sale">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\home product banner.jpg" alt="Festive" onerror="this.dataset.err='1'">
+        <div class="slide-caption">Home Center Sales — Must-have Looks</div>
+      </div>
+      <div class="hero-slide" data-caption="Sneakers sales ">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\ajio-footwear-sale.jpg" alt="Designer" onerror="this.dataset.err='1'">
+        <div class="slide-caption"> new Sneakers Drops — check it</div>
+      </div>
+      <div class="hero-slide" data-caption="Winter collections offers ">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\winterseason banner.jpg" alt="winter season " onerror="this.dataset.err='1'">
+        <div class="slide-caption"> Winter collections offers — check it</div>
+      </div>
+      <div class="hero-slide" data-caption="Ajio LUXE">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\luxe weekend banner.jpg"  alt="Ajio LUXE" onerror="this.dataset.err='1'">
+         <div class="slide-caption"> Ajio LUXE</div>
+      </div>
+    </div>
+    <button class="hero-arrow right" id="nextHero" aria-label="next slide"></button>
+    <div class="hero-dots" id="heroDots">
+    </div>
+  </section>
+
+  <!-- TRENDING / COLLECTIONS with scroll-reveal -->
+  <section class="collections">
+    <h2 class="section-title">Trending Collections</h2>
+
+    <div class="grid">
+      <article class="card reveal" data-title="Streetwear Street">
+        <div class="card-media">
+          <img src="c:\Users\Subash\Desktop\ajio landing page photos\Streetwear-style.jpg" alt="streetwear" onerror="this.style.display='none'; this.parentElement.classList.add('no-image')">
+        </div>
+        <div class="card-body">
+          <h3>Streetwear Essentials</h3>
+          <p>Casual fits, bold prints — starting ₹799</p>
+          <button class="btn">Shop Now</button>
+        </div>
+      </article>
+
+      <article class="card reveal" data-title="Evening Attire">
+        <div class="card-media">
+          <img src="c:\Users\Subash\Desktop\ajio landing page photos\party wear img.jpg" alt="evening" onerror="this.style.display='none'; this.parentElement.classList.add('no-image')">
+        </div>
+        <div class="card-body">
+          <h3>Evening & Partywear</h3>
+          <p>Exclusive designer pieces — up to 60% off</p>
+          <button class="btn">Explore</button>
+        </div>
+      </article>
+
+      <article class="card reveal" data-title="Active">
+        <div class="card-media">
+          <img src="c:\Users\Subash\Desktop\ajio landing page photos\sports.webp" alt="active" onerror="this.style.display='none'; this.parentElement.classList.add('no-image')">
+        </div>
+        <div class="card-body">
+          <h3>Active & Sports</h3>
+          <p>Performance wear — flat 40% off</p>
+          <button class="btn">Grab Deal</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- BRAND MARQUEE (continuous) -->
+  <section class="brand-marquee" aria-hidden="false">
+    <div class="marquee-track" id="brandTrack">
+      <!-- repeated via JS for smooth loop; safe fallback images included -->
+      <div class="brand-item">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\puma.jpg" alt="brand1" onerror="this.style.display='none'">
+        <div class="brand-tag">Puma</div>
+      </div>
+      <div class="brand-item">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\nike.webp" alt="brand2" onerror="this.style.display='none'">
+        <div class="brand-tag">Nike</div>
+      </div>
+      <div class="brand-item">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\levis.jpg" alt="brand3" onerror="this.style.display='none'">
+        <div class="brand-tag">Levi's</div>
+      </div>
+      <div class="brand-item">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\gucci.avif" alt="brand4" onerror="this.style.display='none'">
+        <div class="brand-tag">Gucci</div>
+      </div>
+      <div class="brand-item">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\zara shoe.webp" alt="brand5" onerror="this.style.display='none'">
+        <div class="brand-tag">Zara</div>
+      </div>
+      <div class="brand-item">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\tommy.webp" alt="brand6" onerror="this.style.display='none'">
+        <div class="brand-tag">tommy hilfiger</div>
+      </div>
+      <div class="brand-item">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\new balance.avif" alt="brand6" onerror="this.style.display='none'">
+        <div class="brand-tag">New Balance</div>
+    </div>
+
+    <div class="brand-item">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\converse.jpg" alt="brand6" onerror="this.style.display='none'">
+        <div class="brand-tag">Converse</div>
+    </div>
+    <div class="brand-item">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\ogiy.webp" alt="brand6" onerror="this.style.display='none'">
+        <div class="brand-tag">ogiy</div>
+    </div>
+    <div class="brand-item">
+        <img src="c:\Users\Subash\Desktop\ajio landing page photos\addidas.webp" alt="brand6" onerror="this.style.display='none'">
+        <div class="brand-tag">Adiddas</div>
+    </div>
+
+  </section>
+
+  <!-- OFFERS HORIZONTAL SCROLLER -->
+  <section class="offers-strip">
+    <h2 class="section-title">Hot Offers</h2>
+    <div class="offers-row" id="offersRow">
+      <div class="offer-pill">🎁 Up to 70% OFF - Designer Bags</div>
+      <div class="offer-pill">👟 Sneakers Fest - Flat 40% OFF</div>
+      <div class="offer-pill">🧥 Winter Jackets - From ₹999</div>
+      <div class="offer-pill">👗 Dresses - Buy 1 Get 1</div>
+      <div class="offer-pill">👜 Bags - Extra 10% with code: LUXE10</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <!-- <footer class="page-footer">
+    <div>© 2025 AJIO LUXE — Demo layout. Replace images with specific brand/product URLs if you want exact brand assets.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!-- 🔹 FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Customer Care -->
+    <div class="footer-section">
+      <h3>Customer Care</h3>
+      <ul>
+        <li><a href="#">Help & FAQs</a></li>
+        <li><a href="#">Track Orders</a></li>
+        <li><a href="#">Returns & Refunds</a></li>
+        <li><a href="#">Payment Options</a></li>
+        <li><a href="#">Shipping Info</a></li>
+      </ul>
+    </div>
+
+    <!-- Company Info -->
+    <div class="footer-section">
+      <h3>About AJIO Luxe</h3>
+      <ul>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press & Media</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Address -->
+    <div class="footer-section">
+      <h3>Address</h3>
+      <p>
+        AJIO Luxe Headquarters<br />
+        21st Floor, Infinity Towers,<br />
+        Mumbai, Maharashtra – 400097<br />
+        📞 +91 1800-102-8888<br />
+        ✉️ support@ajio-luxe.com
+      </p>
+    </div>
+
+    <!-- Chat + Social -->
+    <div class="footer-section chat-section">
+      <h3>Need Help?</h3>
+      <button id="chatBtn" class="chat-btn">💬 Chat with AI Assistant</button>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 AJIO Luxe – Crafted with ❤️ for Fashion Enthusiasts</p>
+  </div>
+</footer>
+
+<!-- 💬 CHAT POPUP -->
+<div class="chat-popup" id="chatPopup">
+  <div class="chat-header">
+    <span>AI Fashion Assistant</span>
+    <button class="close-chat" id="closeChat">×</button>
+  </div>
+  <div class="chat-body" id="chatBody">
+    <p class="bot-msg">👋 Hi there! How can I help you today?</p>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your message..." />
+    <button id="sendBtn">➤</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
